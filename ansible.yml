@@ -9,11 +9,14 @@
 # - /mcp/security_compliance
 # - /mcp/platform_configuration
 
-- name: List Jobs
-  ansible.mcp.run_tool:
-    name: list_jobs
-    args:
-      max_items: 10
-  no_log: true
-  register: jobs_list
+- name: MCP Ansible
+  hosts: localhost
+  tasks:
+    - name: List Jobs
+      ansible.mcp.run_tool:
+        name: list_jobs
+        args:
+        max_items: 10
+      no_log: true
+      register: jobs_list
 
