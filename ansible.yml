@@ -14,7 +14,8 @@
   tasks:
     - name: List Jobs
       ansible.mcp.run_tool:
-        name: list_jobs
+        #name: list_jobs
+        name: job_management
         args:
         max_items: 10
       no_log: true
