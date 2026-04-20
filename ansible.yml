@@ -21,8 +21,8 @@
   environment:
         MCP_BEARER_TOKEN: "{{ ansible_ssh_pass }}"
   tasks:
-    - name: Retrieve list of supported tools from an MCP server
-      ansible.mcp.tools_info:
+    # - name: Retrieve list of supported tools from an MCP server
+    #   ansible.mcp.tools_info:
 
     # - name: Retrieve server info from GitHub MCP server
     #   ansible.mcp.server_info:
