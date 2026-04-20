@@ -16,7 +16,9 @@
     ansible_mcp_server_name: ec2-54-165-75-147.compute-1.amazonaws.com:8448
     #ansible_mcp_server_name: https://ec2-54-165-75-147.compute-1.amazonaws.com:8448
     ansible_mcp_validate_certs: false
-    ansible_mcp_bearer_token: "{{ ansible_password }}"
+    ansible_mcp_bearer_token: "{{ ansible_ssh_pass }}"
+  environment:
+        MCP_BEARER_TOKEN: "{{ ansible_ssh_pass }}"
   tasks:
     - name: Retrieve list of supported tools from an MCP server
       ansible.mcp.tools_info:
