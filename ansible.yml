@@ -24,8 +24,8 @@
     # - name: Retrieve list of supported tools from an MCP server
     #   ansible.mcp.tools_info:
 
-    # - name: Retrieve server info from GitHub MCP server
-    #   ansible.mcp.server_info:
+    - name: Retrieve server info from GitHub MCP server
+      ansible.mcp.server_info:
 
     # - name: List Jobs
     #   ansible.mcp.run_tool:
