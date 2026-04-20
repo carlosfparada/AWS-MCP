@@ -18,7 +18,7 @@
     ansible_mcp_validate_certs: false
     ansible_mcp_bearer_token: "{{ ansible_ssh_pass }}"
   environment:
-        MCP_BEARER_TOKEN: "{{ ansible_ssh_pass }}"
+    MCP_BEARER_TOKEN: "{{ ansible_ssh_pass }}"
   tasks:
     # - name: Retrieve list of supported tools from an MCP server
     #   ansible.mcp.tools_info:
