@@ -10,8 +10,8 @@
 # - /mcp/platform_configuration
 
 - name: MCP Ansible
-  #hosts: ec2-54-165-75-147.compute-1.amazonaws.com
-  hosts: localhost
+  hosts: ec2-54-165-75-147.compute-1.amazonaws.com
+  #hosts: localhost
   connection: ansible.mcp.mcp
   vars:
     ansible_mcp_server_name: ec2-54-165-75-147.compute-1.amazonaws.com:8448
